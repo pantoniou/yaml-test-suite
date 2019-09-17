@@ -37,9 +37,11 @@ The tests are currently written in TestML under the `test` directory on the
 
 If your language has a TestML processor, you can use these files directly.
 
-Otherwise you can use the generated data. For that, use the latest
-`data-YYYY-MM-DD` release under
-"https://github.com/yaml/yaml-test-suite/releases"[https://github.com/yaml/yaml-test-suite/releases].
+Otherwise you can use the generated data. For that, use the latest `data`
+release under
+"https://github.com/yaml/yaml-test-suite/releases"[https://github.com/yaml/yaml-test-suite/releases]:
+
+    git clone https://github.com/yaml/yaml-test-suite -b data-YYYY-MM-DD
 
 You can also use the `data` branch, but be aware that this changes and the branch
 might also be squashed, so don't rely on it and be prepared to update.
