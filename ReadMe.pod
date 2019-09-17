@@ -51,13 +51,23 @@ Not every test dir will have the same elements. Since the tests are just data,
 it is up to the framework using the tests to decide which tests to use and how
 to use them.
 
-The tests are currently written in TestML under the C<test> directory on the
-C<master> branch. The test data is split into the separate files structure,
-and kept on the C<data> branch. This makes tests easier to groom.
-
 To get a quick overview of the tests you can have a look at the L<YAML Test
 Matrix|http://matrix.yaml.io/> -
 L<https://github.com/perlpunk/yaml-test-matrix>.
+
+=head2 Usage
+
+The tests are currently written in TestML under the C<test> directory on the
+C<master> branch.
+
+If your language has a TestML processor, you can use these files directly.
+
+Otherwise you can use the generated data. For that, use the latest C<data-YYYY-MM-
+DD> release under
+L<https://github.com/yaml/yaml-test-suite/releases|https://github.com/yaml/yaml-test-suite/releases>.
+
+You can also use the C<data> branch, but be aware that this changes and the
+branch might also be squashed, so don't rely on it and be prepared to update.
 
 =head2 Updating Things
 
