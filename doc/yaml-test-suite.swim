@@ -32,19 +32,20 @@ Matrix"[http://matrix.yaml.io/]
 
 == Usage
 
-The tests are currently written in TestML under the `test` directory on the
-`master` branch.
+The tests are currently written in
+"TestML"[https://github.com/testml-lang/testml/] under the `test` directory on
+the `master` branch.
 
 If your language has a TestML processor, you can use these files directly.
 
-Otherwise you can use the generated data. For that, use the latest `data`
-release under
+Otherwise you can use the raw data files. For that, use the latest release under
 "https://github.com/yaml/yaml-test-suite/releases"[https://github.com/yaml/yaml-test-suite/releases]:
 
     git clone https://github.com/yaml/yaml-test-suite -b data-YYYY-MM-DD
 
-You can also use the `data` branch, but be aware that this changes and the branch
-might also be squashed, so don't rely on it and be prepared to update.
+The releases are made from the `data` branch, which is made from the data in
+the TestML in the `master` branch. You shouldn't use the data branch directly
+as the branch is squashed and force pushed from time to time.
 
 == Updating Things
 
